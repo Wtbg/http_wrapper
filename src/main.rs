@@ -1,9 +1,8 @@
 use std::net::SocketAddr;
 
 use axum::{
-    extract::{ Path, State },
     http::StatusCode,
-    response::{ Html, IntoResponse, Response },
+    response::IntoResponse,
     routing::{ get, post },
     Form,
     Router,
@@ -14,12 +13,9 @@ use volo_gen::mini_redis::{
     MiniRedisServiceClientBuilder,
     SetRequest,
     Status,
-    ValueResponse,
     GetRequest,
     DelRequest,
 };
-use volo_gen::*;
-use volo_thrift::ResponseError;
 use lazy_static::lazy_static;
 use serde::Deserialize;
 lazy_static! {
