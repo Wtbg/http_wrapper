@@ -73,7 +73,7 @@
 
 测试使用reqwest，在另外的仓库里，可参见作业提交表格
 
-
+https://github.com/Wtbg/mini-redis-httpclient
 
 ## Beg for score
 
